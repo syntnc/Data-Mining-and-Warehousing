@@ -5,7 +5,7 @@
 <img src="https://img.shields.io/badge/VS Code-1.10.2-blue.svg"/>  
 
 ### Contents
-* [IIIT-A Artificial Intelligence Course (IAIN 532 C)](#iiita)
+* [IIIT-A Data Mining and Warehousing Course (IDMW 632 C)](#iiita)
 
 ### Language:
 
@@ -28,7 +28,7 @@
  Codename     :	loki
 ```
 
-## IIIT-A Artificial Intelligence Course (IAIN 532 C)
+## IIIT-A Data Mining and Warehousing Course (IDMW 632 C)
 
 ```
  University   : Indian Institute of Information Technology, Allahabad
