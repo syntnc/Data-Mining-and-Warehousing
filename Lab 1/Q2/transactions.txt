@@ -1,0 +1,6 @@
+TID     Items bought
+T 100   M,O,N,K,E,Y
+T 200   D,O,N,K,E,Y
+T 300   M,A,K,E
+T 400   M,U,C,K,Y
+T 500   C,O,O,K,I,E
