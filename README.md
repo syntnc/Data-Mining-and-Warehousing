@@ -6,6 +6,9 @@
 
 ### Contents
 * [IIIT-A Data Mining and Warehousing Course (IDMW 632 C)](#iiita)
+* [Lab 1: Apriori Algorithm](#lab1)
+* [Lab 2: FP Growth Algorithm](#lab2)
+* [Lab 3: Decision Tree](#lab3)
 
 ### Language:
 
@@ -28,12 +31,30 @@
  Codename     :	loki
 ```
 
-## IIIT-A Data Mining and Warehousing Course (IDMW 632 C)
+## IIIT-A Data Mining and Warehousing Course (IDMW 632 C) [](#){name=iiita}
 
 ```
  University   : Indian Institute of Information Technology, Allahabad
  Course code  :	IDMW 632 C
  Semester     :	6
+```
+
+## Lab 1: Apriori Algorithm [](#){name=lab1}
+
+```
+ apriori.py -s <minimum support> -c <minimum confidence> transactions.txt
+```
+
+## Lab 2: FP Growth Algorithm [](#){name=lab2}
+
+```
+ python fp_growth.py data/T40I10D100K.dat -s <minimum support>
+```
+
+## Lab 3: Decision Tree [](#){name=lab3}
+
+```
+ python decision_tree.py
 ```
 
 * All solutions of laboratory problems are in Python3.
