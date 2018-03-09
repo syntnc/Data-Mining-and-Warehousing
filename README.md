@@ -31,7 +31,8 @@
  Codename     :	loki
 ```
 
-## IIIT-A Data Mining and Warehousing Course (IDMW 632 C) [](#){name=iiita}
+<a name="iiita"></a>
+## IIIT-A Data Mining and Warehousing Course (IDMW 632 C) 
 
 ```
  University   : Indian Institute of Information Technology, Allahabad
@@ -39,19 +40,22 @@
  Semester     :	6
 ```
 
-## Lab 1: Apriori Algorithm [](#){name=lab1}
+<a name="lab1"></a>
+## Lab 1: Apriori Algorithm
 
 ```
  apriori.py -s <minimum support> -c <minimum confidence> transactions.txt
 ```
 
-## Lab 2: FP Growth Algorithm [](#){name=lab2}
+<a name="lab2"></a>
+## Lab 2: FP Growth Algorithm
 
 ```
  python fp_growth.py data/T40I10D100K.dat -s <minimum support>
 ```
 
-## Lab 3: Decision Tree [](#){name=lab3}
+<a name="lab3"></a>
+## Lab 3: Decision Tree
 
 ```
  python decision_tree.py
