@@ -9,6 +9,7 @@
 * [Lab 1: Apriori Algorithm](#lab1)
 * [Lab 2: FP Growth Algorithm](#lab2)
 * [Lab 3: Decision Tree](#lab3)
+* [Lab 4: Bayesian Classifier](#lab4)
 
 ### Language:
 
@@ -59,6 +60,13 @@
 
 ```
  python decision_tree.py
+```
+
+<a name="lab4"></a>
+## Lab 4: Bayesian Classifier
+
+```
+ python main.py <filename>
 ```
 
 * All solutions of laboratory problems are in Python3.
