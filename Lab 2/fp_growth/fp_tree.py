@@ -79,15 +79,15 @@ class FPTree(object):
         '''PERFORMS CLEANUP DURING REMOVAL OF A NODE'''
         head, tail = self._routes[node_to_remove.item]
         if node_to_remove is head:
-            if node_to_remove is tail or not node_to_remove.neighbor:
+            if node_to_remove is tail or not node_to_remove.neighbour:
                 # It was the sole node.
                 del self._routes[node_to_remove.item]
             else:
-                self._routes[node_to_remove.item] = self.Route(node_to_remove.neighbor, tail)
+                self._routes[node_to_remove.item] = self.Route(node_to_remove.neighbour, tail)
         else:
             for node in self.nodes(node_to_remove.item):
-                if node.neighbor is node_to_remove:
-                    node.neighbor = node_to_remove.neighbor # skip over
+                if node.neighbour is node_to_remove:
+                    node.neighbour = node_to_remove.neighbour # skip over
                     if node_to_remove is tail:
                         self._routes[node_to_remove.item] = self.Route(head, node)
                     break

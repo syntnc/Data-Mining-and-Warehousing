@@ -1,6 +1,10 @@
+import csv
 from collections import defaultdict, namedtuple
+from optparse import OptionParser
+
 from fp_growth.fp_node import FPNode
 from fp_growth.fp_tree import FPTree
+
 
 def conditional_tree_from_paths(paths, minimum_support):
     """Builds a conditional FP-tree from the given prefix paths."""
@@ -50,12 +54,13 @@ def find_frequent_itemsets(transactions, minimum_support, include_support=False)
     processed_transactions = []
 
     for transaction in transactions:
+        transaction = transaction[0].split()
         processed = []
         for item in transaction:
             items[item] += 1
             processed.append(item)
         processed_transactions.append(processed)
-    
+  
     items = dict((item, support) for item, support in items.items()
                   if support >= minimum_support)
 
@@ -68,6 +73,7 @@ def find_frequent_itemsets(transactions, minimum_support, include_support=False)
     master = FPTree()
     for transaction in map(clean_transaction, processed_transactions):
         master.add(transaction) 
+    # master.inspect()
 
     def find_with_suffix(tree, suffix):
         for item, nodes in tree.items():
@@ -88,9 +94,6 @@ def find_frequent_itemsets(transactions, minimum_support, include_support=False)
 
 def main():
     '''MAIN METHOD'''
-    from optparse import OptionParser
-    import csv
-
     p = OptionParser(usage='%prog data_file')
     p.add_option('-s', '--minimum-support', dest='minsup', type='int',
         help='Minimum itemset support (default: 2)')
@@ -102,7 +105,6 @@ def main():
 
     filename = open(args[0])
     try:
-        # print(sum(1 for line in csv.reader(filename)), '\n\n')
         for itemset, support in find_frequent_itemsets(csv.reader(filename), options.minsup, True):
             print('{' + ', '.join(itemset) + '} ' + str(support))
     finally:

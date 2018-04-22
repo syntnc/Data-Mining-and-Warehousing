@@ -9,6 +9,12 @@ class FPNode(object):
         self._children = {}
         self._neighbour = None
 
+    def __repr__(self):
+        if self.root:
+            return '<%s (root)>' % type(self).__name__
+        return '<%s %r (%r)>' % (type(self).__name__, self.item, self.count)
+
+
     def add(self, child):
         '''ADDS GIVEN NODE AS A CHILD OF THE CURRENT NODE'''
         if not isinstance(child, FPNode):
@@ -108,11 +114,6 @@ class FPNode(object):
         return tuple(self._children.values())
 
     def inspect(self, depth=0):
-        print(' ' * depth) + repr(self)
+        print('   ' * depth + repr(self))
         for child in self.children:
             child.inspect(depth + 1)
-    
-    def __repr__(self):
-        if self.root:
-            return '<%s (root)>' % type(self).__name__
-        return '<%s %r (%r)>' % (type(self).__name__, self.item, self.count)
