@@ -135,6 +135,7 @@ def main():
     arguments = parse_arguments()
     data = data_from_txt(arguments.filename)
     rules, itemset = Apriori(data, arguments.min_support, arguments.min_confidence).run()
+    print('Mined {}\nand found a total of {} association rules:'.format(arguments.filename, len(rules)))
     print_association_rules(rules)
     #print_frequent_itemsets(itemset)
 

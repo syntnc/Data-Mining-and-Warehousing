@@ -5,11 +5,11 @@
 <img src="https://img.shields.io/badge/VS Code-1.10.2-blue.svg"/>  
 
 ### Contents
-* [IIIT-A Data Mining and Warehousing Course (IDMW 632 C)](#iiita)
-* [Lab 1: Apriori Algorithm](#lab1)
-* [Lab 2: FP Growth Algorithm](#lab2)
-* [Lab 3: Decision Tree](#lab3)
-* [Lab 4: Bayesian Classifier](#lab4)
+
+- [Lab 1: Apriori Algorithm](https://github.com/coderIlluminatus/Data-Mining-and-Warehousing/tree/master/Lab%201)
+- [Lab 2: FP Growth Algorithm](https://github.com/coderIlluminatus/Data-Mining-and-Warehousing/tree/master/Lab%202)
+- [Lab 3: Decision Tree](https://github.com/coderIlluminatus/Data-Mining-and-Warehousing/tree/master/Lab%203)
+- [Lab 4: Bayesian Classifier](https://github.com/coderIlluminatus/Data-Mining-and-Warehousing/tree/master/Lab%204)
 
 ### Language:
 
@@ -32,42 +32,16 @@
  Codename     :	loki
 ```
 
-<a name="iiita"></a>
+
 ## IIIT-A Data Mining and Warehousing Course (IDMW 632 C) 
 
 ```
  University   : Indian Institute of Information Technology, Allahabad
  Course code  :	IDMW 632 C
  Semester     :	6
+ Instructor   : Dr. Ranjana Vyas / Dr. Vrijendra Singh
 ```
 
-<a name="lab1"></a>
-## Lab 1: Apriori Algorithm
-
-```
- apriori.py -s <minimum support> -c <minimum confidence> transactions.txt
-```
-
-<a name="lab2"></a>
-## Lab 2: FP Growth Algorithm
-
-```
- python fp_growth.py data/T40I10D100K.dat -s <minimum support>
-```
-
-<a name="lab3"></a>
-## Lab 3: Decision Tree
-
-```
- python decision_tree.py
-```
-
-<a name="lab4"></a>
-## Lab 4: Bayesian Classifier
-
-```
- python main.py <filename>
-```
 
 * All solutions of laboratory problems are in Python3.
 * Every solution is properly documented using docstrings.
